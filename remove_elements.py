@@ -4,10 +4,9 @@
 Author: Gene Jiang
 Date: 2021-02-25 19:50:35
 LastEditors: Gene Jiang
-LastEditTime: 2021-02-25 20:00:11
-Description: 
+LastEditTime: 2021-03-01 19:22:49
+Description: remove the specified value
 '''
-import pytest
 
 
 class Solution:
@@ -28,5 +27,11 @@ class Solution:
             else:
                 right -= 1
         
-        return right, nums[0, right]
+        return right, nums[0:right]
+
+
+
+if __name__ == "__main__":
+    pass
+    
 
